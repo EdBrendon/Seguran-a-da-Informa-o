@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color: lightgray;">
+    <h1 style="color: darkgreen;">Insira seu Nome:</h1>
+
+    <!--Inicio do formulário onde colocamos o input para inserir o nome e retornar um valor no nameOutput-->
+    <input type="text" id="nameInput" />
+
+    <button onclick="displayName()" style="background-color: green; color: white;">Coloque Aqui</button>
+
+    <p id="nameOutput" style="color: darkgreen;"></p>
+    
+    <!-- Adicionando a imagem -->
+    <img src="C:\Users\moni_\Downloads\17634645_1383010461759254_6662034669402944547_n.png" alt="Minha Imagem">
+
+    <!--Fim do formulário-->
+
+    <!-- Script para validar o nome, mostrar na tela-->
+    <script>
+      //Criar uma função que será chamada displayName
+      function displayName() {
+        //Recebe um valor de input e guarda em nameValue
+        var name = document.getElementById("nameInput").value;
+
+        //Retorna o valor e inclui no parágrafo com o id "nameOutput"
+        document.getElementById("nameOutput").innerHTML = "Salve " + name + ", acesse o APP Legalize já!";
+      }
+    </script>
+</body>
+</html>
